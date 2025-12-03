@@ -43,4 +43,18 @@ double leerNumeroDecimal(String msj) {
       print('Debe escribir un numero...');
     }
   }
+} 
+
+String leerTexto(String msj, String aviso) {
+  String texto = ''; //hay que colocar texto vacio para que no de error de 'null'
+  while (true) {
+    stdout.write('$msj: ');
+    texto = stdin.readLineSync().toString();
+    if (texto.trim().isNotEmpty) { //Que es .trim()d?
+      return texto.trim();     //alt + flecha arriba para subir linea de codigo
+    } else {
+      print('Debe escribir $aviso...');
+    }
+    
+  }
 }
