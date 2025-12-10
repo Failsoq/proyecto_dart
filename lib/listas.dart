@@ -48,7 +48,20 @@ void main(){
   edades.forEach((edad) => print('La edad es $edad'));
 
   util.encabezado('edades ordenadas descendente', 50);
+  edades.sort((a, b) => b - a);
+  edades.forEach((edad) => print('la edad es $edad'));
 
+  util.encabezado('Lista de mayores de edad', 50);
+  edades
+  .where((edad) => edad >= 18)
+  .forEach((edad) => print('La edad es $edad'));
 
+  util.encabezado('Lista de menores de edad', 50);
+  edades
+  .where((edad) => edad < 18)
+  .forEach((edad) => print('la edad es $edad'));
 
+  util.encabezado('lista de edades unicas', 50);
+  var edadesUnicas = edades.toSet().toList();
+  edadesUnicas.forEach((edad) => print('La edad es $edad')); // Esto es para que me de los valores sin repetirlos
 }
