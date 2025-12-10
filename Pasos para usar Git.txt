@@ -1,0 +1,63 @@
+========================================
+	Pasos para usar Git
+========================================
+
+1.- Lo Primero es Instalar Git. Para verificar que está instalado: git --version
+
+	Cofiguración Global				|	Configuración Local
+
+2.- git config --global user.name "Tu Nombre" 		| git config user.name "Tu Nombre"
+
+3.- git config --global user.email "ejemplo@email.com"	| git config user.email "ejemplo@email.com"
+
+4.- Para ver la configuración global, usa:
+
+	git config --global user.name			| git config user.name
+
+	git config --global user.email			| git config user.email
+
+5.- Para eliminar el nombre de usuario global y para eliminar el correo electrónico global:
+
+	git config --global --unset user.name
+
+	git config --global --unset user.email
+
+6.- Si tienes múltiples valores para una misma clave y quieres eliminarlos todos, usa:
+
+	git config --global --unset-all user.name
+
+	git config --global --unset-all user.email
+
+7.- Otra opción es editar directamente el archivo de configuración global (~/.gitconfig) con:
+
+	git config --global --edit
+
+8.- Si quieres eliminar toda la sección user global (que incluye nombre, email, etc.), puedes usar:
+
+	git config --global --remove-section user
+
+9.- git init
+
+10.- git add .
+
+11.- git commit -m "primer commit"
+
+12.- Crea un nuevo repositorio en tu cuenta de GitHub
+
+13.- git remote add origin https://github.com/jcuicas/proyectoHTMX.git
+
+14.- git branch -M main
+
+15.- git push -u origin main
+
+======================================
+Actualizar Repositorio Segundo commit
+======================================
+
+1.- git add .
+
+2.- git commit -m "segundo commit"
+
+3.- git branch -M main
+
+4.- git push -u origin main
